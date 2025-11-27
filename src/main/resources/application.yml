@@ -1,0 +1,18 @@
+# 修改端口为9995
+server:
+  port: 9995
+
+# 顶格写
+spring:
+  #数据库连接信息
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://dbconn.sealoshzh.site:37555/zzyl_user_client?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: p4xr9tcs  # 如果你的密码是0开头的  0123  那么必须用但引号包裹 '0123'
+#Mybatis配置
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启日志
+    map-underscore-to-camel-case: true # 开启驼峰命名转换
+
